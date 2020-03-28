@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        div > p {
+        background-color: #ddd;
+      }
+      div + p {
+        background: black;
+        color: #fff;
+      }
+      ul ~ p {
+        background: #ff0000;
+        color: #fff;
+      }
+      a[target] {
+        background: #ccc;
+      }
+      input[type='text'],
+      input[type='email'] {
+        width: 100%;
+      }
+      .form{
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hii, this is Selectors.</p>
+        <ul>
+            <li>Item 1</li>
+            <li><p>Hii, this is Selectors.</p></li>
+            <li>Item 3</li>
+          </ul>
+          <p>Hii, this is Selectors.</p>
+    </div>
+    <p>Hii, this is Selectors.</p>
+    <a href="#">Page 1</a> 
+    <a href="#" target="_blank">Page 2</a>
+    <a href="http://google.com" target="_blank">Google</a>
+
+    <br>
+    <br>
+
+    <form>
+        <input type="text" class="form" placeholder="Name" />
+        <input type="email" class="form" placeholder="Email" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
